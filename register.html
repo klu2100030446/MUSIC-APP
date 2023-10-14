@@ -1,0 +1,160 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style>
+  
+   body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('registerBack.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+  
+  
+  h3 {    
+    color: #333;
+    background-color: rgb(218, 191, 215);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 28px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    
+    
+  }
+
+  #outerDiv {
+    width: 70%;
+    margin: 0 auto; /* Center the div */
+  }
+
+  table {
+    width: 60%;
+    
+    background-color: #ffffff; /* Change the table background color */
+    border: 10px solid #ccc;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  #viewdata {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+  }
+
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+
+
+</style>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <br>
+  <br>   
+  <br>
+   <h3 style="color: #000000;">Register</h3>
+   
+   
+   <div id="outerDiv">
+   <table style="width:100%">
+    <tr>
+      <td style="width: 100px;font-weight: bold">Email ID</td>
+      <td><input type="email" id="t1" size="97" /></td>
+    </tr>
+    <tr>
+     <td style="width:100px;font-weight: bold">Name</td>
+     <td><input type="text" id="t2"/></td>
+    </tr>
+   <tr>
+      <td style="width:100px;font-weight: bold">Password</td>
+      <td><input type="password" id="t3" size="97" /></td>
+   </tr>
+    
+   <tr>
+      <td style="width:100px;font-weight: bold">Re-Enter Password</td>
+      <td><input type="password" id="t4" size="97"/></td>
+   </tr>
+    <tr>
+     <td style="width:100px;font-weight: bold">Gender</td>
+     <td>
+     <select id="d1">
+     <option value="Male">Male</option>
+     <option value="Female">Female</option>
+     <option value="Others">Others</option>
+     </select>
+     </td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+      <button onclick="register()">Register</button>
+   
+     </td>
+    </tr>
+    <tr>
+     <td></td>
+     <td><label id="l1"></label> </td>
+    </tr>
+   </table>
+   </div>
+   <div id="viewdata"></div>
+   
+   
+  </body>
+</html>
+
+
+
